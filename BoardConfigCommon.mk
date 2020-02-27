@@ -35,6 +35,7 @@ TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a73
 # Kernel
 BOARD_KERNEL_CMDLINE := \
     androidboot.boot_devices=soc/c0c4000.sdhci \
+    androidboot.init_fatal_reboot_target=recovery \
     androidboot.configfs=true \
     androidboot.hardware=qcom \
     androidboot.super_partition=system \
@@ -49,7 +50,7 @@ BOARD_KERNEL_CMDLINE := \
     service_locator.enable=1 \
     usbcore.autosuspend=7 \
     androidboot.verifiedbootstate=green \
-    user_debug=31
+    user_debug=31 
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
