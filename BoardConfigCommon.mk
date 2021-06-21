@@ -48,6 +48,7 @@ BOARD_KERNEL_CMDLINE := \
     sched_enable_power_aware=1 \
     service_locator.enable=1 \
     usbcore.autosuspend=7 \
+    androidboot.verifiedbootstate=green \
     user_debug=31
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
