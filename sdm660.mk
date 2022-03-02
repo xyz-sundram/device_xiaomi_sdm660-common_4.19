@@ -197,6 +197,7 @@ PRODUCT_PACKAGES += \
     libqdMetaData \
     libqdMetaData.system \
     libtinyxml \
+    libsdmutils.vendor \
     vendor.display.config@1.9 \
     vendor.display.config@2.0
 
