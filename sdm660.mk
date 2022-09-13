@@ -438,6 +438,7 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
+    packages/modules/Bluetooth/android/app \
     hardware/xiaomi
 
 # Telephony
