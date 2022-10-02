@@ -358,6 +358,9 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     libqti-perfd-client
 
+# Platform
+TARGET_BOARD_PLATFORM := sdm660
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.2.vendor \
