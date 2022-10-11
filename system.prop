@@ -30,6 +30,9 @@ persist.log.tag.ContrastColorUtil=S
 # Netflix
 ro.netflix.bsp_rev=Q660-13149-1
 
+# FUSE
+persist.sys.fuse.passthrough.enable=true
+
 # Radio
 DEVICE_PROVISIONED=1
 persist.sys.fflag.override.settings_network_and_internet_v2=true
