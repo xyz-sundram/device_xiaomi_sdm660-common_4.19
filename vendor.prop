@@ -1,3 +1,6 @@
+# ART
+dalvik.vm.dex2oat64.enabled=true
+
 # Audio
 af.fast_track_multiplier=1
 vendor.audio_hal.period_size=240
