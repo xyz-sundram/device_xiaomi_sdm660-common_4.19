@@ -154,6 +154,9 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
+# Lineage Health
+TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/power_supply/battery/battery_charging_enabled
+
 # Power
 TARGET_USES_INTERACTION_BOOST := true
 
@@ -166,6 +169,9 @@ TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 # SELinux
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 PRODUCT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
+BOARD_SEPOLICY_M4DEFS += \
+    sysfs_battery_supply=vendor_sysfs_battery_supply \
+    sysfs_usb_supply=vendor_sysfs_usb_supply
 
 # Treble
 PRODUCT_FULL_TREBLE_OVERRIDE := true
