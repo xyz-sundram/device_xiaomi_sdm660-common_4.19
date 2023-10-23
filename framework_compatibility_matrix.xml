@@ -228,7 +228,7 @@
     </hal>
     <hal format="aidl" optional="true">
         <name>vendor.aospa.power</name>
-        <version>1.0</version>
+        <version>1</version>
         <interface>
             <name>IPowerFeature</name>
             <instance>default</instance>
