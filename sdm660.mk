@@ -280,6 +280,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     IFAAService
 
+
+# ParanoidDoze
+PRODUCT_PACKAGES += \
+    ParanoidDoze
+
 # Init
 PRODUCT_PACKAGES += \
     fstab.zram \
