@@ -14,7 +14,6 @@ TARGET_NO_BOOTLOADER := true
 
 # Platform
 BOARD_VENDOR := xiaomi
-TARGET_BOARD_PLATFORM := sdm660
 OVERRIDE_QCOM_HARDWARE_VARIANT := sdm660
 
 # Disable sparse on all filesystem images

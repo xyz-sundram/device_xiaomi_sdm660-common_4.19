@@ -13,6 +13,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 OVERRIDE_PRODUCT_COMPRESSED_APEX := false
 
+# Platform
+TARGET_BOARD_PLATFORM := sdm660
+
 # QTI Components
 TARGET_COMMON_QTI_COMPONENTS := \
     bt \
