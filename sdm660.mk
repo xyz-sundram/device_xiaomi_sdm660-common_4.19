@@ -294,7 +294,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     init.fingerprint.rc \
-    init.qcom.power.rc \
     init.qcom.rc \
     init.recovery.qcom.rc \
     init.target.rc \
@@ -342,10 +341,6 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml
 
-# Mlipay
-PRODUCT_PACKAGES += \
-    vendor.xiaomi.hardware.mlipay@1.1.vendor
-
 # Netd
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.1.vendor
@@ -372,19 +367,6 @@ DEVICE_PACKAGE_OVERLAYS += \
 # Perf
 PRODUCT_PACKAGES += \
     libqti-perfd-client
-
-# Power
-PRODUCT_PACKAGES += \
-    android.hardware.power@1.2.vendor \
-    android.hardware.power-service.xiaomi-libperfmgr
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/powerhint_636.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint_636.json \
-    $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
-
-PRODUCT_SOONG_NAMESPACES += \
-    hardware/google/interfaces \
-    hardware/google/pixel
 
 # Public libraries
 PRODUCT_COPY_FILES += \
